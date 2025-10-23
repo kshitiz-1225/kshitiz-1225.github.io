@@ -1,65 +1,89 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<meta charset="UTF-8">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-MQQP9FM');</script>
   <!-- End Google Tag Manager -->
-  <meta name=viewport content="width=800">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
 
-  <title>Kshitiz Webpage</title>
-  <meta name="description" content="Kshitiz — MSR student at CMU. Research: machine learning, computer vision">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kshitiz — CMU MSR</title>
+  <meta name="description" content="Kshitiz — MSR student at CMU RI. Research: vision–language models for robotics, robot manipulation, and real-world reinforcement learning.">
   <link rel="icon" href="misc/ksh.jpeg" sizes="32x32" />
   <link rel="icon" href="misc/ksh.jpeg" sizes="192x192" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
 
-  <style type="text/css">
-    /* Color scheme (legacy) */
+  <style>
+    /* Links */
     a { color: #1772d0; text-decoration: none; }
     a:focus, a:hover { color: #f09228; text-decoration: none; }
 
+    /* Base typography */
     body, td, th, tr, p {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 15px;
       color: #111;
+      line-height: 1.55;
     }
 
-    abs { font-family: 'Lato'; font-style: italic; font-size: 14px; }
-    strong { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 15px; }
-    heading { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 22px; font-weight: 700; display:block; margin-bottom:6px; }
-    papertitle { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: 700; }
+    abs { font-style: italic; font-size: 14px; }
+    strong { font-size: 15px; }
+    heading { font-size: 22px; font-weight: 700; display:block; margin-bottom:6px; }
+    papertitle { font-size: 18px; font-weight: 700; }
+    name { font-size: 40px; font-weight: 700; letter-spacing: .3px; }
 
-    name { font-family: 'Lato'; font-size: 40px; }
-
-    .one { width: 160px; height: 160px; position: relative; }
-    .two { width: 160px; height: 160px; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2s ease-in-out; -webkit-transition: opacity .2s ease-in-out; }
-    .fade { transition: opacity .2s ease-in-out; -moz-transition: opacity .2s ease-in-out; -webkit-transition: opacity .2s ease-in-out; }
-    span.highlight { background-color: #ffffd0; }
+    /* Preserve legacy table layout but make responsive */
+    table[width="800"] { width: 100% !important; max-width: 900px; margin: 0 auto; }
+    .sep { border-top:1px solid #eee; }
+    .meta { color:#666; font-size: 14px; }
 
     /* Pills for topics */
     .pill { display:inline-block; padding:.2rem .5rem; border:1px solid #ddd; border-radius:999px; font-size:13px; margin:.15rem .35rem .15rem 0; color:#555; background:#fafafa; }
 
-    /* Small meta text */
-    .meta { color:#666; font-size: 14px; }
-
     /* Publication thumbnails */
-    .thumb { width:180px; border-radius:15px; border:1px solid black; }
+    .thumb { width:180px; border-radius:15px; border:1px solid #000; }
 
-    /* Section separators */
-    .sep { border-top:1px solid #eee; }
+    /* Profile image */
+    .profile { width:200px; border-radius: 12px; border: 1px solid #ddd; }
+
+    /* Highlight */
+    .highlight { background-color: #ffffd0; }
+
+    /* Small screens */
+    @media (max-width: 680px) {
+      name { font-size: 32px; }
+      .thumb { width: 140px; }
+    }
   </style>
 
   <script type="text/javascript" src="js/hidebib.js"></script>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kshitiz",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Carnegie Mellon University — Robotics Institute"
+    },
+    "jobTitle": "MSR Student",
+    "image": "misc/kshitiz.png",
+    "url": "https://example.com",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=6NH4hWgAAAAJ&hl=en",
+      "https://www.linkedin.com/in/kshitiz25/",
+      "https://github.com/kshitiz-1225"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -70,6 +94,7 @@
   <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
       <td>
+
         <!-- Header / About -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
@@ -78,25 +103,34 @@
                 <name>Kshitiz (क्षितिज)</name><br>
               </p>
 
-            <p>
-            I am a first-year MSR student at <a href="https://www.ri.cmu.edu/" target="_blank" rel="noopener">Carnegie Mellon University</a>. I graduated from <a href="https://iitj.ac.in/" target="_blank" rel="noopener">Indian Institute of Technology Jodhpur, India </a> in 2023 with a B.Tech in <a href="https://iitj.ac.in/computer-science-engineering/" target="_blank" rel="noopener">Computer Science and Engineering</a> (Department Rank 2).
-            </p>
-            <p>
-            Previously: Research Fellow @ <a href="https://www.intel.com/content/www/us/en/research/overview.html" target="_blank" rel="noopener">Intel Labs</a>; Senior Analyst @ <a href="https://about.media.net/" target="_blank" rel="noopener">Media.net (previously Directi)</a>
-            </p>
+              <p>
+                I am a first-year MSR student at the
+                <a href="https://www.ri.cmu.edu/" target="_blank" rel="noopener">Robotics Institute, Carnegie Mellon University</a>,
+                co-advised by
+                <a href="https://aviralkumar2907.github.io/" target="_blank" rel="noopener">Aviral Kumar</a> and
+                <a href="https://zackory.com/" target="_blank" rel="noopener">Zackory Erickson</a>.
+              </p>
 
-              <div aria-label="Topics">
-                <span class="pill">Generative Modeling</span>
-                <span class="pill">Weakly Supervised Learning</span>
-                <span class="pill">Few-shot and Meta-learning</span>
-                <span class="pill">Domain Adaptation</span>
-                <span class="pill">Object and Activity Detection</span>
-                <span class="pill">Semantic Segmentation</span>
-                <span class="pill">Efficient Attention Mechanisms</span>
+              <p>
+                My research focuses on <span class="highlight">vision–language model (VLM) reasoning for robotics</span> and
+                <span class="highlight">real-world reinforcement learning (RWRL)</span>.
+                I build manipulation systems that can <em>understand instructions, ground language in perception, and plan</em>
+                robust actions in unstructured homes and labs. On the learning side, I study
+                data-efficient, safe RWRL that lets robots <em>autonomously improve</em> over time—from large, messy, off-policy
+                logs or continual on-robot data—while respecting safety constraints and minimizing human supervision.
+              </p>
+
+              <p class="meta" aria-label="Topics">
+                <span class="pill">VLMs for Robotics</span>
+                <span class="pill">Robot Manipulation</span>
+                <span class="pill">Real-World RL</span>
+                <span class="pill">Grounding & Reasoning</span>
+                <span class="pill">Imitation + RL</span>
+                <span class="pill">Safety & Constraint RL</span>
+                <span class="pill">Embodied AI</span>
                 <span class="pill">Multi-modal Learning</span>
-              </div>
+              </p>
 
-              <br>
               <p align="center">
                 <a href="mailto:kshitiz2@andrew.cmu.edu">Email</a> &nbsp;/&nbsp;
                 <a href="misc/Kshitiz_CV.pdf" target="_blank" rel="noopener">Curriculum Vitae (CV)</a> &nbsp;/&nbsp;
@@ -106,12 +140,10 @@
               </p>
             </td>
             <td width="33%" align="center">
-              <img src="misc/kshitiz.png" width="200" alt="Kshitiz profile photo">
+              <img class="profile" src="misc/kshitiz.png" alt="Photo of Kshitiz">
             </td>
           </tr>
         </table>
-
-
 
         <!-- News -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" class="sep">
@@ -119,6 +151,7 @@
             <td>
               <heading>News</heading>
               <ul>
+                <li><strong>Oct 2025</strong> — Began working with Aviral Kumar and Zackory Erickson at CMU RI.</li>
                 <li><strong>Aug 2025</strong> — Started the MSR program at CMU.</li>
                 <li><strong>Aug 2024</strong> — Joined Intel Labs as a Research Fellow.</li>
                 <li><strong>2024</strong> — Selected as a pre-doctoral Research Fellow with Microsoft Research India.</li>
@@ -132,7 +165,6 @@
                 <li><strong>2023</strong> — Attended ICLR (Kigali).</li>
                 <li><strong>2023</strong> — Graduated with Department Rank 2, IIT Jodhpur CSE.</li>
                 <li><strong>2023</strong> — Teaching Assistant, Deep Learning (Jan–May 2023).</li>
-
               </ul>
             </td>
           </tr>
@@ -214,6 +246,30 @@
           </tr>
         </table>
 
+        <!-- Research (Focus) -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" class="sep">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Research (Focus)</heading>
+              <p>
+                Real-world perception-and-action systems operate amid shifting lighting, clutter, and goals.
+                My work aims to make robot manipulation <em>generalize</em> and <em>self-improve</em> under these shifts.
+              </p>
+              <ul>
+                <li><b>VLM Reasoning for Manipulation:</b> Grounding open-ended language commands into scene understanding,
+                  affordance discovery, and multi-step plans; integrating VLM priors with low-level control for robust long-horizon tasks.</li>
+                <li><b>Real-World RL for Autonomous Improvement:</b> Data-efficient, safe learning on real robots using off-policy logs,
+                  constrained objectives, and continual updates; minimizing resets, annotations, and sim-to-real gaps.</li>
+                <li><b>Imitation + RL:</b> Leveraging demonstrations and tele-op traces to bootstrap policies, then improving online with
+                  uncertainty-aware exploration and risk-sensitive control.</li>
+              </ul>
+              <p>
+                I care about methods that are <em>deployable</em>—easy to run on physical robots, resilient to distribution shift,
+                and transparent about failure modes.
+              </p>
+            </td>
+          </tr>
+        </table>
 
         <!-- Research Experience (extended) -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" class="sep">
@@ -221,25 +277,22 @@
             <td width="100%" valign="middle">
               <heading>Research Experience</heading>
               <p>
-                I worked with <a href="https://scholar.google.com/citations?user=okqK5UAAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Richa Singh</a> and <a href="https://scholar.google.com/citations?user=-DAxp-cAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Prof. Mayank Vatsa</a> as an undergraduate researcher at the <a href="https://iab-rubric.org/" target="_blank" rel="noopener">Image Analysis and Biometrics Lab, IIT Jodhpur</a>. I also worked closely with <a href="https://scholar.google.co.in/citations?user=YmYvVEQAAAAJ&hl=en/" target="_blank" rel="noopener">Prof. Saket Anand</a> (IIIT-Delhi) and <a href="https://scholar.google.com/citations?user=xX2D9FQAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Sudeep Sarkar</a> (USF, Tampa). I have contributed first-author papers to AAAI, IJCAI, and ICLR.
+                I worked with <a href="https://scholar.google.com/citations?user=okqK5UAAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Richa Singh</a> and
+                <a href="https://scholar.google.com/citations?user=-DAxp-cAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Prof. Mayank Vatsa</a> as an undergraduate researcher at the
+                <a href="https://iab-rubric.org/" target="_blank" rel="noopener">Image Analysis and Biometrics Lab, IIT Jodhpur</a>. I also worked closely with
+                <a href="https://scholar.google.co.in/citations?user=YmYvVEQAAAAJ&hl=en/" target="_blank" rel="noopener">Prof. Saket Anand</a> (IIIT-Delhi) and
+                <a href="https://scholar.google.com/citations?user=xX2D9FQAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Sudeep Sarkar</a> (USF, Tampa). I have contributed first-author papers to AAAI, IJCAI, and ICLR.
               </p>
               <p>
-                Collaborations during undergrad include: <a href="https://scholar.google.com/citations?user=nHhtvqkAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Timothy Hospedales</a> (Machine Intelligence Group, University of Edinburgh), <a href="https://scholar.google.com.sg/citations?user=D_JvEcwAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Yogesh Rawat</a> (UCF), <a href="https://vibhav-vineet.github.io/" target="_blank" rel="noopener">Vaibhav Vineet</a> (Microsoft Research, Redmond), <a href="https://scholar.google.co.in/citations?user=cVg7HrEAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Venkatesh Babu</a> (IISc), and <a href="https://sites.google.com/view/angshumanpaul/home" target="_blank" rel="noopener">Dr. Angshuman Paul</a> (IIT Jodhpur). I also interned at PrithviAI and <a href="https://ihub-drishti.ai/" target="_blank" rel="noopener">iHub-Drishti</a> (DST, India) on an automatic number plate detection system under <a href="https://sites.google.com/iitj.ac.in/kadesai/home" target="_blank" rel="noopener">Dr. Kaushal A. Desai</a> and <a href="https://web.iitd.ac.in/~santanuc/" target="_blank" rel="noopener">Prof. Santanu Chaudhury</a>.
+                Collaborations during undergrad include: <a href="https://scholar.google.com/citations?user=nHhtvqkAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Timothy Hospedales</a> (University of Edinburgh),
+                <a href="https://scholar.google.com.sg/citations?user=D_JvEcwAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Yogesh Rawat</a> (UCF),
+                <a href="https://vibhav-vineet.github.io/" target="_blank" rel="noopener">Vaibhav Vineet</a> (Microsoft Research, Redmond),
+                <a href="https://scholar.google.co.in/citations?user=cVg7HrEAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Venkatesh Babu</a> (IISc), and
+                <a href="https://sites.google.com/view/angshumanpaul/home" target="_blank" rel="noopener">Dr. Angshuman Paul</a> (IIT Jodhpur).
+                I also interned at PrithviAI and <a href="https://ihub-drishti.ai/" target="_blank" rel="noopener">iHub-Drishti</a> (DST, India) on an automatic number plate detection system under
+                <a href="https://sites.google.com/iitj.ac.in/kadesai/home" target="_blank" rel="noopener">Dr. Kaushal A. Desai</a> and
+                <a href="https://web.iitd.ac.in/~santanuc/" target="_blank" rel="noopener">Prof. Santanu Chaudhury</a>.
               </p>
-            </td>
-          </tr>
-        </table>
-
-        <!-- Research (Motivation) -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" class="sep">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Research (Motivation) </heading>
-              <p>
-            Real-world perception systems operate in constantly changing environments with unpredictable data shifts, highlighting the need to build systems that can generalize beyond training data.
-            Developing these robust solutions is particularly important for applications like autonomous vehicles and healthcare, where obtaining sufficient labeled data is difficult and supervised learning methods fall short.
-            Inspired by human cognition, I aim to develop AI systems that interpret complex environments with minimal supervision, adapting effectively to new contexts.
-            Motivated by these challenges, I am interested to work in the areas of : Machine Learning, Computer Vision, and its application in Robotics.
             </td>
           </tr>
         </table>
@@ -250,68 +303,52 @@
             <td>
               <heading>Experience</heading>
               <ul>
-                <li>
-                  <strong>Intel Labs</strong> — Research Fellow <span class="meta">2024–2025</span><br>
-                </li>
-                <li>
-                  <strong>Media.net</strong> — Senior Analyst <span class="meta">2023–2024</span><br>
-                </li>
-                <li>
-                  <strong>IIT Jodhpur</strong> — Undergraduate Researcher <span class="meta">2021–2023</span><br>
-                </li>
+                <li><strong>Intel Labs</strong> — Research Fellow <span class="meta">2024–2025</span></li>
+                <li><strong>Media.net</strong> — Senior Analyst <span class="meta">2023–2024</span></li>
+                <li><strong>IIT Jodhpur</strong> — Undergraduate Researcher <span class="meta">2021–2023</span></li>
               </ul>
             </td>
           </tr>
         </table>
 
-
         <!-- Academic Services -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" class="sep">
-        <tr>
+          <tr>
             <td>
-            <heading>Academic Services</heading>
-            <ul>
-                <li>
-                <b>Invited Reviewer:</b>
-                NeurIPS, CVPR, ICLR Tiny Papers, CODS-COMAD, Pattern Recognition (J)
-                </li>
-                <li>
-                <b>Teaching Assistant:</b>
-                Deep Learning Course, IIT Jodhpur <i>[Spring 2023]</i>
-                </li>
-            </ul>
+              <heading>Academic Services</heading>
+              <ul>
+                <li><b>Invited Reviewer:</b> NeurIPS, CVPR, ICLR Tiny Papers, CODS-COMAD, Pattern Recognition (J)</li>
+                <li><b>Teaching Assistant:</b> Deep Learning Course, IIT Jodhpur <i>[Spring 2023]</i></li>
+              </ul>
             </td>
-        </tr>
+          </tr>
         </table>
-
-
 
         <!-- Misc -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" class="sep">
-        <tr>
+          <tr>
             <td>
-            <heading>More about me!</heading>
-            <p> I enjoy badminton, hitting the gym for weight training, exploring music, and traveling to experience new places and cultures.       </p>
+              <heading>More about me!</heading>
+              <p>I enjoy badminton, weight training at the gym, exploring music, and traveling to experience new places and cultures.</p>
             </td>
-        </tr>
+          </tr>
         </table>
-
 
         <!-- Footer -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" class="sep">
           <tr>
             <td>
               <p align="right">
-                <font size="2">
+                <small>
                   Template inspiration: <a href="https://jonbarron.info/" target="_blank" rel="noopener"><strong>Jon Barron</strong></a>
-                </font>
+                </small>
               </p>
             </td>
           </tr>
         </table>
 
         <!-- Old Google Analytics (kept per request) -->
-        <script type="text/javascript">
+        <script>
           (function(){
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             var s = document.createElement('script');
@@ -327,7 +364,7 @@
     </tr>
   </table>
 
-  <script type="text/javascript">
+  <script>
     try { hideallbibs(); hideallabs(); } catch (e) {}
   </script>
 </body>
